@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="بكل الحب نتشرف بدعوتكم لحضور زفاف طارق وأنيسة — ٤ و ٥ أكتوبر ٢٠٢٦">
+<meta property="og:type" content="website">
+<meta property="og:title" content="دعوة زفاف طارق وأنيسة 💍">
+<meta property="og:description" content="اضغط لفتح الدعوة — ٤ و ٥ أكتوبر ٢٠٢٦">
+<meta property="og:image" content="https://tarekamen.github.io/wedding/poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f4eadf">
+<style>*,*::before,*::after{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>دعوة طارق وأنيسة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Playfair+Display:wght@400;500&display=swap">
+<style>
+/* Layout: a sealed letterpress envelope fills the first screen; breaking the wax seal opens it onto the film, then the three nights. Single cream look on purpose, matching the printed invite. */
+:root{
+  --paper:#f4eadf; --card:#fffaf4; --ink:#3a200e; --ink-soft:#7a5a42;
+  --gold:#a8834f; --gold-soft:#e4d3b8; --wax:#8e1f1f; --wax-deep:#5e1010;
+  --script:"Great Vibes","Brush Script MT",cursive;
+  --ar:"Amiri","Noto Naskh Arabic","Times New Roman",serif;
+  --ruqaa:"Aref Ruqaa","Amiri",serif;
+  --num:"Playfair Display",Georgia,serif;
+  color-scheme:light;
+}
+html,body{height:100%}
+html{background:var(--paper)}
+body{background:var(--paper);color:var(--ink);font-family:var(--ar);font-size:17px;line-height:1.6}
+body.locked{overflow:hidden}
+
+/* ---------- Cover / envelope ---------- */
+.cover{position:fixed;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;
+  padding:calc(20px + env(safe-area-inset-top,0px)) 16px calc(20px + env(safe-area-inset-bottom,0px));
+  background:
+    radial-gradient(120% 70% at 50% 0%, #fbf4ec 0%, transparent 60%),
+    radial-gradient(90% 60% at 50% 100%, #efe0cf 0%, transparent 70%),
+    var(--paper);
+  transition:opacity .9s ease, visibility 0s linear .9s}
+.cover.gone{opacity:0;visibility:hidden}
+.env{position:relative;width:min(400px,100%);max-height:100%;perspective:1400px}
+.letter{position:relative;background:var(--card);border-radius:6px;padding:22px 18px 150px;text-align:center;
+  box-shadow:0 30px 60px -30px rgba(58,32,14,.55),0 2px 0 rgba(255,255,255,.7) inset;
+  display:flex;flex-direction:column;align-items:center;gap:10px;overflow:hidden}
+.letter::before{content:"";position:absolute;inset:9px;border:1px solid var(--gold-soft);border-radius:3px;pointer-events:none}
+.letter::after{content:"";position:absolute;inset:14px;border:1px solid var(--gold);opacity:.45;border-radius:2px;pointer-events:none}
+.bism{font-family:var(--ar);font-size:17px;color:var(--ink-soft);margin-top:6px}
+.ayah{font-family:var(--ar);font-style:italic;font-size:15.5px;color:var(--ink-soft);max-width:30ch;line-height:1.7;text-wrap:balance}
+.ayah small{display:block;font-style:normal;font-size:12px;color:var(--gold)}
+.lead{font-family:var(--ruqaa);font-size:21px;line-height:1.5;max-width:22ch;text-wrap:balance;margin-top:4px}
+.couple{font-family:var(--script);white-space:nowrap;font-size:clamp(46px,14vw,64px);line-height:1.05;direction:ltr;margin:2px 0}
+.couple span{color:var(--gold)}
+.couple-ar{font-family:var(--ruqaa);font-size:19px;margin-top:-6px}
+.dates{display:flex;align-items:center;gap:14px;font-family:var(--ar);color:var(--ink-soft);font-size:15px}
+.dates b{font-family:var(--num);font-weight:400;font-size:28px;color:var(--ink);display:block;line-height:1}
+.dates i{width:1px;height:38px;background:var(--gold)}
+.sprig{width:120px;height:14px;color:var(--gold)}
+
+/* flap that folds over the bottom of the letter */
+.flap{position:absolute;left:0;right:0;bottom:0;height:120px;transform-origin:50% 100%;
+  background:linear-gradient(180deg,#f6ebde,#efe1d0);clip-path:polygon(0 100%,0 30%,50% 0,100% 30%,100% 100%);
+  border-radius:0 0 6px 6px;box-shadow:0 -1px 0 var(--gold-soft) inset;transition:transform .9s cubic-bezier(.6,.05,.3,1)}
+.seal{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);z-index:2;
+  width:96px;height:96px;border-radius:50%;border:0;cursor:pointer;color:#f5d9a8;
+  background:radial-gradient(circle at 35% 30%,#b33a32 0%,var(--wax) 45%,var(--wax-deep) 100%);
+  box-shadow:0 10px 22px -8px rgba(94,16,16,.7),inset 0 0 0 6px rgba(0,0,0,.08),inset 0 0 0 9px rgba(255,220,180,.18);
+  display:flex;align-items:center;justify-content:center;font-family:var(--script);font-size:34px;line-height:1;
+  transition:transform .5s ease,opacity .5s ease}
+.seal:focus-visible{outline:2px solid var(--gold);outline-offset:5px}
+.tap{position:absolute;left:0;right:0;bottom:12px;z-index:2;font-family:var(--ar);font-weight:700;font-size:15px;color:var(--ink);pointer-events:none}
+.tap span{display:inline-block}
+
+@media (prefers-reduced-motion:no-preference){
+  .seal{animation:pulse 2.2s ease-in-out infinite}
+  .tap span{animation:bob 1.6s ease-in-out infinite}
+  .cover.opening .flap{transform:rotateX(180deg)}
+  .cover.opening .letter{transform:translateY(-14px);transition:transform 1s ease .3s}
+}
+@keyframes pulse{0%,100%{transform:translateX(-50%) scale(1)}50%{transform:translateX(-50%) scale(1.06)}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+.cover.opening .seal{animation:none;transform:translateX(-50%) scale(.4) rotate(-25deg);opacity:0}
+.cover.opening .tap{opacity:0}
+
+/* ---------- Opened invitation ---------- */
+.wrap{max-width:440px;margin-inline:auto;display:flex;flex-direction:column;gap:28px;padding-inline:16px;padding-block:24px 48px}
+.film{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(58,32,14,.45);border:1px solid var(--gold-soft);background:var(--card)}
+.film video{display:block;width:100%;height:auto;aspect-ratio:512/848;max-width:100%;background:var(--card)}
+.welcome{text-align:center;display:flex;flex-direction:column;gap:6px}
+.welcome .eyebrow{font-family:var(--num);letter-spacing:.32em;font-size:12px;color:var(--gold);text-transform:uppercase}
+.welcome h1{margin:0;font-family:var(--script);font-weight:400;font-size:clamp(46px,13vw,64px);line-height:1.15;direction:ltr}
+.welcome h1 span{color:var(--gold)}
+.welcome p{margin:0;color:var(--ink-soft);max-width:32ch;margin-inline:auto;text-wrap:balance}
+.divider{display:flex;align-items:center;gap:12px;color:var(--gold);font-family:var(--num);font-size:11px;letter-spacing:.32em;text-transform:uppercase}
+.divider::before,.divider::after{content:"";flex:1;height:1px;background:var(--gold-soft)}
+
+.count{text-align:center;display:flex;flex-direction:column;gap:12px}
+.count .label{font-family:var(--ruqaa);font-size:22px}
+.clock{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;direction:rtl}
+.unit{border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding-block:10px 6px;display:flex;flex-direction:column;align-items:center}
+.unit b{font-family:var(--num);font-weight:400;font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.unit small{font-size:14px;color:var(--ink-soft)}
+.done{font-family:var(--ruqaa);font-size:24px;color:var(--wax)}
+
+.nights{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.night{background:var(--card);border:1px solid var(--gold-soft);border-radius:18px;padding:18px 12px 14px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:4px;min-width:0}
+.night h2{margin:0;font-family:var(--ruqaa);font-size:26px;font-weight:700}
+.night .day{font-family:var(--num);font-size:56px;line-height:1.05}
+.night .meta{color:var(--ink-soft);font-size:15px;line-height:1.5}
+.night .where{font-size:15px;margin-top:4px;min-height:1.5em}
+.night.wide{grid-column:1 / -1}
+.night.wide .actions{flex-direction:row;flex-wrap:wrap;justify-content:center}
+.night.wide .actions .btn{flex:1 1 150px}
+.actions{display:flex;flex-direction:column;gap:8px;width:100%;margin-top:10px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border-radius:999px;text-decoration:none;font-family:var(--ar);font-weight:700;font-size:15px;border:1px solid var(--ink);color:var(--ink);background:transparent;cursor:pointer}
+.btn.primary{background:var(--ink);color:var(--card)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.btn svg{width:18px;height:18px;flex:none}
+.foot{text-align:center;color:var(--ink-soft);font-size:16px;display:flex;flex-direction:column;gap:2px}
+.foot .heart{color:var(--wax)}
+.foot .sig{font-family:var(--ruqaa);font-size:20px;color:var(--ink)}
+.again{align-self:center;background:none;border:0;color:var(--gold);font-family:var(--ar);font-size:14px;text-decoration:underline;cursor:pointer}
+@media (max-width:360px){.nights{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){
+  .wrap.show > *{animation:rise .8s ease-out both}
+  .wrap.show > *:nth-child(2){animation-delay:.1s}
+  .wrap.show > *:nth-child(3){animation-delay:.2s}
+}
+@keyframes rise{from{opacity:.2;transform:translateY(10px)}to{opacity:1;transform:none}}
+</style>
+
+</head>
+<body>
+<div class="cover" id="cover" dir="rtl">
+  <div class="env">
+    <div class="letter">
+      <div class="bism">بسم الله الرحمن الرحيم</div>
+      <div class="ayah">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾<small>سورة الروم ٢١</small></div>
+      <svg class="sprig" viewBox="0 0 120 14" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 7h44M74 7h44"/><path d="M60 2c-4 3-4 7 0 10 4-3 4-7 0-10z"/><circle cx="52" cy="7" r="1.4" fill="currentColor"/><circle cx="68" cy="7" r="1.4" fill="currentColor"/></svg>
+      <div class="lead">بكل الحب والفرح نتشرف بدعوتكم لمشاركتنا فرحتنا بزفاف</div>
+      <div class="couple">Tarek <span>&amp;</span> Anisa</div>
+      <div class="couple-ar">طارق &nbsp;و&nbsp; أنيسة</div>
+      <div class="dates">
+        <div><b>4</b>الأحد</div><i></i>
+        <div>أكتوبر<br>2026</div><i></i>
+        <div><b>5</b>الاثنين</div>
+      </div>
+      <div class="flap" aria-hidden="true"></div>
+      <button class="seal" id="open" type="button" aria-label="افتح الدعوة">T&amp;A</button>
+      <div class="tap"><span>اضغط على الختم لفتح الدعوة</span></div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap" id="main" dir="rtl">
+  <header class="welcome">
+    <span class="eyebrow">Save the date</span>
+    <h1>Tarek <span>&amp;</span> Anisa</h1>
+    <p>حضوركم يكمّل فرحتنا، ويشرفنا تكونوا معانا في ليالي العمر</p>
+  </header>
+
+  <div class="film">
+    <video id="vid" src="invite.mp4" poster="poster.jpg" controls playsinline preload="auto"></video>
+  </div>
+
+  <div class="divider" id="details">التفاصيل</div>
+
+  <section class="count" aria-live="polite">
+    <div class="label" id="countLabel">باقي على الوليمة</div>
+    <div class="clock" id="clock">
+      <div class="unit"><b id="d">0</b><small>يوم</small></div>
+      <div class="unit"><b id="h">0</b><small>ساعة</small></div>
+      <div class="unit"><b id="m">0</b><small>دقيقة</small></div>
+      <div class="unit"><b id="s">0</b><small>ثانية</small></div>
+    </div>
+  </section>
+
+  <section class="nights" id="nights"></section>
+
+  <div class="foot">
+    <span>في انتظاركم <span class="heart">♥</span></span>
+    <span class="sig">طارق و أنيسة</span>
+  </div>
+  <button class="again" id="again" type="button">اقفل الدعوة وافتحها تاني</button>
+</main>
+
+<script>
+// Event details. Times are Cairo time (UTC+03:00).
+const EVENTS = [
+  { title:"الوليمة", dayName:"الأحد", day:"4", month:"أكتوبر 2026", timeText:"بعد صلاة الظهر", wide:true,
+    start:"2026-10-04T12:15:00+03:00", end:"2026-10-04T15:00:00+03:00",
+    place:"بيت أولاد أمين (بيت العريس)",
+    calLocation:"بيت أولاد أمين (بيت العريس): https://maps.app.goo.gl/2d5E3BxnLo2cXXDp6",
+    locations:[{name:"بيت العريس", url:"https://maps.app.goo.gl/2d5E3BxnLo2cXXDp6"}] },
+  { title:"الحنة", dayName:"الأحد", day:"4", month:"أكتوبر 2026", timeText:"مساءً",
+    start:"2026-10-04T20:00:00+03:00", end:"2026-10-04T23:59:00+03:00",
+    place:"بيت أولاد أمين<br>وبيت العروسة",
+    calLocation:"بيت أولاد أمين: https://maps.app.goo.gl/2d5E3BxnLo2cXXDp6 — بيت العروسة: https://maps.app.goo.gl/mPXwxsxSUAX7EkNG8",
+    locations:[{name:"بيت أولاد أمين", url:"https://maps.app.goo.gl/2d5E3BxnLo2cXXDp6"},{name:"بيت العروسة", url:"https://maps.app.goo.gl/mPXwxsxSUAX7EkNG8"}] },
+  { title:"الدخلة", dayName:"الاثنين", day:"5", month:"أكتوبر 2026", timeText:"مساءً",
+    start:"2026-10-05T20:00:00+03:00", end:"2026-10-05T23:59:00+03:00",
+    place:"قرية النخيل السياحية<br>كفر الصارم البحري – المحلة الكبرى",
+    calLocation:"قرية النخيل السياحية، كفر الصارم البحري، المحلة الكبرى: https://maps.app.goo.gl/a6UcwT7oEb82ZnGD7",
+    locations:[{name:"قرية النخيل", url:"https://maps.app.goo.gl/a6UcwT7oEb82ZnGD7"}] }
+];
+const COUPLE = "طارق وأنيسة";
+const ico = {
+  cal:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v4M10 15h4"/></svg>',
+  pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-6.5-6.2-6.5-11A6.5 6.5 0 0 1 18.5 10c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>'
+};
+const gcalDate = iso => new Date(iso).toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+function gcalLink(ev){
+  const p = new URLSearchParams({action:"TEMPLATE", text:`${ev.title} ${COUPLE}`, dates:`${gcalDate(ev.start)}/${gcalDate(ev.end)}`, details:`دعوة ${ev.title} — ${COUPLE}`, location:ev.calLocation});
+  return "https://calendar.google.com/calendar/render?" + p.toString();
+}
+document.getElementById("nights").innerHTML = EVENTS.map(ev => {
+  const many = ev.locations.length > 1;
+  const locs = ev.locations.map(l => `<a class="btn" href="${l.url}" target="_blank" rel="noopener">${ico.pin}${many ? l.name : "اللوكيشن"}</a>`).join("");
+  return `<article class="night${ev.wide ? " wide" : ""}">
+    <h2>${ev.title}</h2><div class="day">${ev.day}</div>
+    <div class="meta">${ev.dayName}<br>${ev.month}<br>${ev.timeText}</div>
+    <div class="where">${ev.place}</div>
+    <div class="actions"><a class="btn primary" href="${gcalLink(ev)}" target="_blank" rel="noopener">${ico.cal}احفظ الموعد</a>${locs}</div>
+  </article>`;
+}).join("");
+
+const $ = id => document.getElementById(id);
+function tick(){
+  const now = Date.now();
+  const next = EVENTS.find(ev => new Date(ev.end).getTime() > now);
+  if(!next){ $("countLabel").textContent = "ألف مبروك لطارق وأنيسة"; $("clock").hidden = true; return; }
+  const startMs = new Date(next.start).getTime();
+  if(startMs <= now){ $("countLabel").innerHTML = `<span class="done">${next.title} النهارده!</span>`; $("clock").hidden = true; return; }
+  $("clock").hidden = false;
+  $("countLabel").textContent = "باقي على " + next.title;
+  let t = Math.floor((startMs - now)/1000);
+  const d = Math.floor(t/86400); t%=86400; const h = Math.floor(t/3600); t%=3600;
+  $("d").textContent=d; $("h").textContent=h; $("m").textContent=Math.floor(t/60); $("s").textContent=t%60;
+}
+tick(); setInterval(tick,1000);
+
+document.body.classList.add("locked");
+const cover = $("cover"), vid = $("vid"), main = $("main");
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function openInvite(){
+  if(cover.classList.contains("opening")) return;
+  cover.classList.add("opening");
+  // Start the film inside the tap so the sound is allowed.
+  vid.currentTime = 0;
+  const p = vid.play(); if(p && p.catch) p.catch(() => {});
+  setTimeout(() => {
+    cover.classList.add("gone");
+    document.body.classList.remove("locked");
+    main.classList.add("show");
+    window.scrollTo(0,0);
+  }, reduce ? 0 : 1300);
+}
+$("open").addEventListener("click", openInvite);
+cover.addEventListener("click", e => { if(e.target.closest(".letter")) openInvite(); });
+$("again").addEventListener("click", () => {
+  vid.pause();
+  main.classList.remove("show");
+  cover.classList.remove("gone","opening");
+  document.body.classList.add("locked");
+});
+vid.addEventListener("ended", () => $("details").scrollIntoView({behavior: reduce ? "auto" : "smooth", block:"start"}));
+</script>
+
+</body>
+</html>
